@@ -1,0 +1,268 @@
+\mainsection{Hughes95}
+\begin{description}
+\item[Class]\mbox{}\\
+incollection
+\item[Title]\mbox{}\\
+The Design of a Pretty-printing Library
+\item[Author(s)]\mbox{}\\
+John Hughes\item[Year published]\mbox{}\\
+1995
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://link.springer.com/chapter/10.1007%2F3-540-59451-5_3}}
+\item[Required concepts]\mbox{}\\
+functional programming\item[Provided concepts]\mbox{}\\
+pretty printing, combinator library\item[Annotation]\mbox{}\\
+Pretty printing is clearly an important form of language processing. This is not the first paper on a declarative and compositional approach to pretty printing; it stands out though with a very accessible presentation explaining the design and implementation of a (Haskell-based) combinator library for pretty printing. This library can be viewed as providing a simple \emph{embedded language} for pretty printing.
+\end{description}
+
+\illusection{Hughes95}{%
+The figure shows snippets (two Haskell terms and one Haskell function) taken from the paper. The figure illustrates pretty printing for binary trees with a string as info at each fork (i.e., non-leaf) node. The pretty-printed term uses line breaks and indentation for prettiness. The pretty printing function maps trees to documents; see the reference to the \emph{Doc} type. Pretty printer combinators are used; see `sep' for example.}
+\mainsection{AlvesV08}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+A Case Study in Grammar Engineering
+\item[Author(s)]\mbox{}\\
+Tiago L. Alves, Joost Visser\item[Year published]\mbox{}\\
+2009
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://wiki.di.uminho.pt/twiki/pub/Personal/Tiago/Publications/grammar-eng.pdf}}
+\item[Required concepts]\mbox{}\\
+software engineering, parsing, metrics\item[Provided concepts]\mbox{}\\
+grammar engineering, grammar recovery, grammar metrics, grammar testing, grammar versioning\item[Annotation]\mbox{}\\
+The `Grammarware Agenda' \extraref{KlintLV05} properly established the terms grammar engineering (and grammarware engineering). The present paper presents a study that involves several areas of grammarware engineering. The study is concerned with the development of a VDM-SL grammar for actual parsing from its ISO standard language reference. The study involves grammar transformation (recovery), testing, metrics, and version management.
+\end{description}
+
+\illusection{AlvesV08}{%
+The figure, taken from the paper, shows the development of different grammar metrics over time. The timeline is defined by the commits of the grammar, as it was changed over time to complete the recovery process and to otherwise develop the parser. Test coverage also drives this process.}
+\mainsection{SirerB99}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Using production grammars in software testing
+\item[Author(s)]\mbox{}\\
+Emin G{\"u}n Sirer, Brian N. Bershad\item[Year published]\mbox{}\\
+1999
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://www.cs.cornell.edu/people/egs/papers/kimera-dsl99.pdf}}
+\item[Required concepts]\mbox{}\\
+software engineering\item[Provided concepts]\mbox{}\\
+grammar-based testing\item[Annotation]\mbox{}\\
+The paper shows how grammar-based test-data generation and an accompanying methodology of testing may be highly effective and scalable for testing language-based software, in fact, the Java Virtual Machine. Previous publications on grammar-based testing mainly focused on compiler testing. The paper relies on a domain-specific language \emph{lava} for specifying grammars from which to generate test data -- bytecode, in this case. The generated test data is used for stress tesing the JVM verifier and also for comparative tesing of different verifiers.
+\end{description}
+
+\illusection{SirerB99}{%
+The figure, taken from the paper, carries the following caption (in the paper): The structure of the test generation process. A code-generator-generator parses a production grammar, generates a code-generator, which in turn probabilistically generates test cases based on a seed.}
+\mainsection{Cordy09}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Excerpts from the TXL Cookbook
+\item[Author(s)]\mbox{}\\
+James R. Cordy\item[Year published]\mbox{}\\
+2011
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://cs.queensu.ca/~cordy/Papers/JC_TXLCookbook_LNCS.pdf}}
+\item[Required concepts]\mbox{}\\
+software engineering\item[Provided concepts]\mbox{}\\
+source-code analysis, source-code transformation\item[Annotation]\mbox{}\\
+The paper captures some reusable knowledge of implementating software components for source-code analysis and transformation. While the paper is focused on TXL as the underlying transformation system, the overall approach to knowledge representation would also make sense for other systems. The following classes of problems are considered: parsing, restructuring, optimization, static analysis, and interpretation. The solutions to the problems are described in terms of `paradigms' such as `Use sequences, not recursions', `Preserve comments in output', `Generate unique identifiers'.
+\end{description}
+
+\illusection{Cordy09}{%
+The figure, taken from the paper, shows a simple TXL rule and its effect on a parse tree. In fact, a binary addition on constants is evaluated, thereby contributing to expression simplification.}
+\mainsection{Hainaut06}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+The Transformational Approach to Database Engineering
+\item[Author(s)]\mbox{}\\
+Jean-Luc Hainaut\item[Year published]\mbox{}\\
+2006
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://link.springer.com/chapter/10.1007%2F11877028_4}}
+\item[Required concepts]\mbox{}\\
+entity-relationship model, relational database\item[Provided concepts]\mbox{}\\
+schema normalization, logical design, schema integration, view derivation, schema equivalence, data conversion, data reverse engineering, schema optimization, data access wapper generation\item[Annotation]\mbox{}\\
+The paper describes fundamental and practical aspects of database transformation techniques. In particular, the notion of transformation is developed in combination with the correctness and reversibility properties.
+\end{description}
+
+\illusection{Hainaut06}{%
+The figure, taken from the paper, shows a particular transformation rule. Quoting from the paper ``Transforming an is-a hierarchy into one-to-one relationship types and conversely. The exclusion constraint (excl:s.C,r.B) states that an A entity cannot be simultaneously linked to a B entity and a C entity. It derives from the disjoint property (D) of the subtypes''}
+\mainsection{RenggliGN10}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Embedding Languages without Breaking Tools
+\item[Author(s)]\mbox{}\\
+Lukas Renggli, Tudor Girba, Oscar Nierstrasz\item[Year published]\mbox{}\\
+2010
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://scg.unibe.ch/archive/papers/Reng10aEmbeddingLanguages.pdf}}
+\item[Required concepts]\mbox{}\\
+Smalltalk\item[Provided concepts]\mbox{}\\
+embedded language\item[Annotation]\mbox{}\\
+The paper describes an embedding approach for the implementation of domain-specific languages (DSLs). Specifically, DSLs are modeled as language extensions of the underlying host language. The approach addresses the challenge of providing the language extensions in a manner that they integrate well with the development tools of the host language. The paper presents the extensible system \emph{Helvetia} which intercepts the compilation pipeline of the Smalltalk host language to seamlessly integrate language extensions. See \extraref{Tratt08} for another extensive discussion of language embedding.
+\end{description}
+
+\illusection{RenggliGN10}{%
+The figure, taken from the paper, shows different interception options for realizing embedded languages in the Smalltalk-based \emph{Helvetia} framework. A pidgin does not require a new parser, but the code needs to be transformed before the semantic analysis. A creole also requires a designated parser. An argot only affects the backend.}
+\mainsection{Reynolds98}
+\begin{description}
+\item[Class]\mbox{}\\
+article
+\item[Title]\mbox{}\\
+Definitional Interpreters for Higher-Order Programming Languages
+\item[Author(s)]\mbox{}\\
+John C. Reynolds\item[Year published]\mbox{}\\
+1998
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://cs.au.dk/~hosc/local/HOSC-11-4-pp363-397.pdf}}
+\item[Note]\mbox{}\\
+This paper originally appeared as~\extraref{Reynolds72}.
+\item[Required concepts]\mbox{}\\
+semantics\item[Provided concepts]\mbox{}\\
+interpreter, continuation\item[Annotation]\mbox{}\\
+The paper discusses the use of interpreters as definitions of languages. There are the notions of defining and defined language (similar to what is also called elsewhere meta and object language). The paper analyzes possible differences between the interpreter-based definition and the formal or informal definition. The paper also discusses different styles of interpreter definition, e.g., a less insightful meta-circular interpreter for a higher-order language versus a first-order interpreter for the same defined language. The issue of application-order dependence is analysed and addressed with continuations.
+\end{description}
+
+\illusection{Reynolds98}{%
+The figure, taken from the paper, shows a meta-circular interpreter for (in) a simple functional language with lambdas, constants, conditionals, and recursive let.}
+\mainsection{ErwigW11}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Semantics First! - Rethinking the Language Design Process
+\item[Author(s)]\mbox{}\\
+Martin Erwig, Eric Walkingshaw\item[Year published]\mbox{}\\
+2012
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://web.engr.oregonstate.edu/~erwig/papers/SemanticsFirst_SLE11.pdf}}
+\item[Required concepts]\mbox{}\\
+functional programming\item[Provided concepts]\mbox{}\\
+language design\item[Annotation]\mbox{}\\
+The paper suggests a semantics-centric approach to language design as opposed to a more syntax-based one. Haskell is used as a metalanguage. General language operators are employed to adapt and grow sophisticated languages out of simple semantics concepts.
+\end{description}
+
+\illusection{ErwigW11}{%
+The figure is taken from a book chapter~\extraref{ErwigW12} that was derived from the conference paper at hand. The semantics-driven DSL design process is summarized. The idea is that one performs domain decomposition on the semantic side; one associates small languages with domains through domain modeling, and one also performs syntactic design to build a full language from the small languages.}
+\mainsection{Koskimies91}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Object-Orientation in Attribute Grammars
+\item[Author(s)]\mbox{}\\
+Kai Koskimies\item[Year published]\mbox{}\\
+1991
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://link.springer.com/chapter/10.1007%2F3-540-54572-7_11}}
+\item[Required concepts]\mbox{}\\
+context-free grammar, attribute grammar, object orientation\item[Provided concepts]\mbox{}\\
+object-oriented context-free grammar, object-oriented context-free grammar\item[Annotation]\mbox{}\\
+The attribute grammar formalism is married with the object-oriented paradigm. Arguably, a side effect of this marriage is that the underlying context-free grammar formalism is also married with object orientation, which is interesting in so far that this (early) explanation of the correspondence is exploited nowadays in diverse mapping tools and code generators.
+\end{description}
+
+\illusection{Koskimies91}{%
+The figure shows two grammars for the same expression language taken from the paper. The first grammar is a conventional context-free grammar in terms of style, whereas the second grammar is restructured to be in an explicitly OO-enabled form. That is, an object model with single inheritance could be derived from the second grammar directly.}
+\mainsection{HappelS06}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Applications of Ontologies in Software Engineering
+\item[Author(s)]\mbox{}\\
+Hans-J{\"o}rg Happel, Stefan Seedorf\item[Year published]\mbox{}\\
+2006
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.89.5733&rep=rep1&type=pdf}}
+\item[Required concepts]\mbox{}\\
+software engineering, ontology\item[Provided concepts]\mbox{}\\
+analysis, design, requirements engineering, component reuse, implementation, modeling, documentation, semantic middleware, semantic web service, maintenance, testing\item[Annotation]\mbox{}\\
+This paper takes an inventory of applications (usage categories) of ontologies in software engineering. It is rich in pointing out the relevance and potential of ontologies in various contexts (e.g., lifecyle phases) in software engineering.
+\end{description}
+
+\illusection{HappelS06}{%
+The figure is taken from the paper. Different roles of ontologies in the context of software engineering are identified along two axes. Legend of acronyms used: Ontology-driven development (ODD), Ontology-enabled development (OED), Ontology-based architectures (OBA), Ontology-enabled architectures (OEA).}
+\mainsection{KurtevBZ02}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Technological spaces: An initial appraisal
+\item[Author(s)]\mbox{}\\
+Ivan Kurtev, Jean Bezivin, Mehmet Aksit\item[Year published]\mbox{}\\
+2002
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://eprints.eemcs.utwente.nl/10206/01/0363TechnologicalSpaces.pdf}}
+\item[Required concepts]\mbox{}\\
+model driven engineering\item[Provided concepts]\mbox{}\\
+technological space\item[Annotation]\mbox{}\\
+As suggested by the title, this is the record of the introduction of the technological space notion. Several spaces are identified and discussed: abstract/concrete syntaxes, database management systems, XML, ontology engineering, and MDA. The megamodel underlying the spaces is discussed and instantiated for some spaces. The need for and the role of bridges between the spaces is explained. See \extraref{Bezivin06} for another, more recent description of technological spaces.
+\end{description}
+
+\illusection{KurtevBZ02}{%
+The figure, taken from the paper, shows five technological spaces and bridges between them.}
+\mainsection{Bezivin06}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Model Driven Engineering: An Emerging Technical Space
+\item[Author(s)]\mbox{}\\
+Jean B{\'e}zivin\item[Year published]\mbox{}\\
+2006
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://link.springer.com/chapter/10.1007%2F11877028_2}}
+\item[Required concepts]\mbox{}\\
+software development\item[Provided concepts]\mbox{}\\
+technological space, model driven engineering, model transformation, metamodeling\item[Annotation]\mbox{}\\
+The paper describes the basic principles and practical characteristics of model driven engineering (MDE). The technological space notion (see also \citeref{KurtevBZ02}) is used to organize much of the description. In particular, MDE is also compared to other technological spaces. The key notions of metamodeling and model transformation are illustrated. Various technologies and standards are placed in context, e.g., EMF and ATL.
+\end{description}
+
+\illusection{Bezivin06}{%
+The figure, taken from the conclusion of the paper, on the left, highlights two important relations involved in MDE---the `isRepresentedBy' relation that some thing (perhaps a model) is represented by a model and the `conformsTo' relation related to metamodeling. On the right, the progression from real-world entities, through models and metamodels, up to metametamodels is megamodeled.}
+\mainsection{Thomas03impedance}
+\begin{description}
+\item[Class]\mbox{}\\
+article
+\item[Title]\mbox{}\\
+The Impedance Imperative, Tuples + Objects + Infosets = Too Much Stuff!
+\item[Author(s)]\mbox{}\\
+Dave Thomas\item[Year published]\mbox{}\\
+2003
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://www.jot.fm/issues/issue_2003_09/column1.pdf}}
+\item[Required concepts]\mbox{}\\
+data programming\item[Provided concepts]\mbox{}\\
+impedance mismatch\item[Annotation]\mbox{}\\
+The paper (a column, in fact) takes a critical look at data programming---specifically in the sense of CRUD (Create, Read, Update, Delete). The discussion covers indexed files, SQL and database access APIs, object-oriented databases, modern wrapping/mapping-based approaches (e.g., object/relational mapping). The column identifies various problems with data programming: diversity of data modeling and CRUD programming options and the practical need to mix them, difficulties of integrating different type systems and data query/transformation languages, proprietary developments, performance issues, and complexity of support technologies. The discussion also briefly touches some contenders that may address some of the problems. The paper may be a good starting point to look for technical publications on the topic.
+\end{description}
+
+\illusection{Thomas03impedance}{%
+The figure, taken from Wikipedia, obviously shows the Bermuda triangle. While working with Erik Meijer on \extraref{LaemmelM06a,LaemmelM06b}, I picked up his intuition that data programming (because of the impedance mismatch) is essentially like operating in the Bermuda triangle. That is, data may disappear, if we allow this exaggeration. Just replace Bermuda, Florida, and Puerto Rico by XML, relational databases, and objects. (The idea of a triangle is an understatement because there are, of course, more competitors, e.g., Cobol and ontologies.)}
+\mainsection{MullerFBC12}
+\begin{description}
+\item[Class]\mbox{}\\
+article
+\item[Title]\mbox{}\\
+Modeling modeling modeling
+\item[Author(s)]\mbox{}\\
+Pierre-Alain Muller, Fr{\'e}d{\'e}ric Fondement, Benoit Baudry, Beno\^{\i}t Combemale\item[Year published]\mbox{}\\
+2012
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{http://people.rennes.inria.fr/Benoit.Baudry/wp-publications/muller2010/}}
+\item[Required concepts]\mbox{}\\
+modeling, model driven engineering\item[Provided concepts]\mbox{}\\
+representation, theory of modeling\item[Annotation]\mbox{}\\
+The paper works towards a theory of modeling. There is a focus on the representation relation that is so central to modeling (in the sense that one thing \emph{represents} another thing). In fact, different (canonical) kinds of representation relations are identified and organized in a corresponding metamodel. This foundational work is well positioned in the context of previous work on the foundations of modeling (and metamodeling).
+\end{description}
+
+\illusection{MullerFBC12}{%
+The figure, taken from the paper, shows variations on the $\mu$ relation. These variations are essentially based on differences with regard to the \emph{intention} of things. Quoting from the paper: ``The intention of a thing thus represents the reason why someone would be using that thing, in which context, and what are the expectations vs.\ that thing. It should be seen as a mixture of requirements, behavior, properties, and constraints, either satisfied or maintained by the thing.''}

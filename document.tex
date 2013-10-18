@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{tikz}
+
+\newcommand{\citeref}[1]{[#1]}
+\newcommand{\extraref}[1]{\cite{#1}}
+\newcommand{\mainsection}[1]{%
+\newpage
+\section{Paper \emph{#1}}
+
+\subsection*{Paper \emph{#1} -- Data}
+}
+\newcommand{\illusection}[2]{%
+
+\newpage
+
+\subsection*{Paper \emph{#1} -- Illustration}
+
+\includegraphics[width=\textwidth]{figures/#1}
+
+\medskip
+
+\noindent
+#2
+}
+
+\title{Yet another annotated SLEBOK bibliography}
+
+\author{Ralf L\"ammel}
+
+\date{Version 0.001 (16 October 2013)}
+
+\begin{document}
+
+\maketitle
+
+%\thispagestyle{empty}
+%\pagestyle{empty}
+
+\begin{abstract}
+
+  Software Language Engineering (SLE) is a particular view on Software
+  Engineering (SE), which pays specific attention to the many software
+  languages that are used in software development.  These are not just
+  programming languages, but also modeling languages, query and
+  transformation languages, schema languages, and domain-specific
+  languages. Thus, SLE is concerned with design, implementation,
+  testing, deployment, and evolution of software languages as well as
+  language-based software components.
+
+  \medskip
+
+  The purpose of this richly annotated bibliography is to contribute
+  to the SLE body of knowledge (SLEBOK). At this stage, the
+  bibliography is not claimed be based on a systematic / structured
+  methodology. Instead, the intention it so collect a manageable set
+  of papers that cover many principles and practilities of SLE in an
+  accessible manner. To this end, the SLE and GTTSE venues were
+  considered, but many other papers were considered on the author's
+  long-term exposition to SLE school of thought. 
+
+  \medskip 
+  The bibliography could be useful in teaching. In fact, the selection
+  papes is largely based on what I have covered or will cover in a
+  relatively advanced SLE course.
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section{Disclaimer}
+
+This is unfinished work.
+
+\section{Acknowledgment}
+
+The following people have provided me with insights and suggestions:
+
+\begin{itemize}
+\item Anya Helene Skrove Bagge
+\item Andrei Varanovich
+\item Andreas Winter
+\item Vadim Zaytsev
+\end{itemize}
+
+\noindent
+I look forward more collaboration. In fact, I hope to turn this effort
+into a proper collaborative effort. For the time being, I am supposed
+to look into some of the suggestions received---some of them being
+more obvious, given the state (version number) of this effort. They
+are mostly concerned with the methodology for collecting and
+semantically enriching papers.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section{Metamodel of the bibliography}
+
+The document is generated from a model. The metamodel is given here
+informally in terms of how the document looks like. There is one page
+per entry with data as follows:
+
+\begin{description}
+
+\item[Class] article, inproceedings---in the sense of bibtex.
+
+\item[Title] obvious
+
+\item[Author(s)] obvious
+
+\item[Year published] obvious
+
+\item[Online URL] Public access where possible
+
+\item[Required concepts] Assumed background
+
+\item[Provided concepts] Knowledge areas served
+
+\item[Annotation] Obvious
+
+\end{description}
+
+Additional metadata is contained in the underlying model. There is a
+second page per entry serving for illustration. The page is dedicated
+to a figure taken from the paper or somewhere else, with a caption
+addeed. The entries may refer to works which are not in the core
+selection. These entries are collected in a plain bibliography.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{bib}
+
+\bibliographystyle{plain}
+\bibliography{extra}
+
+\end{document}
