@@ -112,6 +112,25 @@ The paper describes an embedding approach for the implementation of domain-speci
 
 \illusection{RenggliGN10}{%
 The figure, taken from the paper, shows different interception options for realizing embedded languages in the Smalltalk-based \emph{Helvetia} framework. A pidgin does not require a new parser, but the code needs to be transformed before the semantic analysis. A creole also requires a designated parser. An argot only affects the backend.}
+\mainsection{HeidenreichJSWB10}
+\begin{description}
+\item[Class]\mbox{}\\
+inproceedings
+\item[Title]\mbox{}\\
+Generating Safe Template Languages
+\item[Author(s)]\mbox{}\\
+Florian Heidenreich, Jendrik Johannes, Mirko Seifert, Christian Wende, Marcel Bohme\item[Year published]\mbox{}\\
+2010
+\item[Online URL]\mbox{}\\
+{\footnotesize\url{https://www.st.cs.uni-saarland.de/~boehme/paper/GPCE09.pdf}}
+\item[Required concepts]\mbox{}\\
+metamodeling\item[Provided concepts]\mbox{}\\
+template instantiation\item[Annotation]\mbox{}\\
+The paper addresses addresses the problem of unsafe template instantiation. Such instantiation can be unsafe in the sense that string-level operations are performed at run-time and thus it is not obvious or known at design time whether the described instantiation will actually lead to syntactically correct output eventually. The proposed approach involves the addition of generic template-instantiation concepts to existing language definitions in a generic manner. Thus, template instantiation would only be described in terms of metamodel instantiation, thereby implying syntactically correctness. Similar problems are present in programming languages with a macro system.
+\end{description}
+
+\illusection{HeidenreichJSWB10}{%
+The figure, taken from the paper, shows the metamodel for template-instantiation concepts, e.g., a conditional and a loop form. The idea is that these concepts can be specialized for the syntactic categories of the language that is to be extended with template concepts. Whether or not a conditional or a loop is allowed in a certain position also depends on the cardinalities of the model element in the position. There is a generic algorithm to weave the template support in a given metamodel for a language.}
 \mainsection{Reynolds98}
 \begin{description}
 \item[Class]\mbox{}\\

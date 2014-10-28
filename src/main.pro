@@ -1,16 +1,15 @@
-% Imports
-:- ensure_loaded('../../../bitbucket/rlaemmel/slebook/src/Prolog/packages/prelude.pro').
-:- ensure_loaded('../../../bitbucket/rlaemmel/slebook/src/Prolog/packages/dict.pro').
+% Reuse prelude of SLEPRO project
+:- ['../../slepro/prelude/higher-order.pro'].
+:- ['../../slepro/prelude/io.pro'].
+:- ['../../slepro/prelude/test.pro'].
+:- ['../../slepro/languages/dict/crud.pro'].
+:- ['../../slepro/languages/dict/conversion.pro'].
 
-% Package contributions
+% Actual generator code
 :- ['generate-tex.pro'].
 
-% Test target
+% Run TeX generator
+:- genTeX.
 
-:- runTests((
-
-   test(
-     genTeX
-   )
-
-)).
+% Done
+:- halt.
