@@ -1,216 +1,8 @@
 [
 
 {
-  class     : incollection,
-  key       : 'Hughes95',
-  authors   : ['John Hughes'],
-  title     : 'The Design of a Pretty-printing Library',
-  pages     : '53-96',
-  booktitle : 'Advanced Functional Programming, First International Spring School on Advanced Functional Programming Techniques, AFP 1995, Tutorial Text',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 925,
-  year      : 1995,
-  access    : closed,
-  url       : 'http://link.springer.com/chapter/10.1007%2F3-540-59451-5_3',
-  note      : [],
-  required  : ['functional programming'],
-  provided  : ['pretty printing', 'combinator library'],
-  annote    : 'Pretty printing is clearly an important form of language processing. This is not the first paper on a declarative and compositional approach to pretty printing; it stands out though with a very accessible presentation explaining the design and implementation of a (Haskell-based) combinator library for pretty printing. This library can be viewed as providing a simple \\emph{embedded language} for pretty printing.',
-  figure    : 'The figure shows snippets (two Haskell terms and one Haskell function) taken from the paper. The figure illustrates pretty printing for binary trees with a string as info at each fork (i.e., non-leaf) node. The pretty-printed term uses line breaks and indentation for prettiness. The pretty printing function maps trees to documents; see the reference to the \\emph{Doc} type. Pretty printer combinators are used; see `sep\' for example.'
-},
-
-{ 
-  class     : inproceedings,
-  key       : 'AlvesV08',
-  authors   : ['Tiago L. Alves', 'Joost Visser'],
-  title     : 'A Case Study in Grammar Engineering',
-  pages     : '285-304',
-  booktitle : 'Software Language Engineering, First International Conference, SLE 2008, Revised Selected Papers',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 5452,
-  year      : 2009,
-  access    : adhoc,
-  url       : 'http://wiki.di.uminho.pt/twiki/pub/Personal/Tiago/Publications/grammar-eng.pdf',
-  note      : [],
-  required  : ['software engineering', 'parsing', 'metrics'],
-  provided  : ['grammar engineering', 'grammar recovery', 'grammar metrics', 'grammar testing', 'grammar versioning'],
-  annote    : 'The `Grammarware Agenda\' \\extraref{KlintLV05} properly established the terms grammar engineering (and grammarware engineering). The present paper presents a study that involves several areas of grammarware engineering. The study is concerned with the development of a VDM-SL grammar for actual parsing from its ISO standard language reference. The study involves grammar transformation (recovery), testing, metrics, and version management.',
-  figure    : 'The figure, taken from the paper, shows the development of different grammar metrics over time. The timeline is defined by the commits of the grammar, as it was changed over time to complete the recovery process and to otherwise develop the parser. Test coverage also drives this process.'
-  
-},
-
-{
-  class     : inproceedings,
-  key       : 'SirerB99',
-  authors   : ['Emin G{\\"u}n Sirer', 'Brian N. Bershad'],
-  title     : 'Using production grammars in software testing',
-  pages     : '1-13',
-  booktitle : 'Proceedings of Second Conference on Domain-Specific Languages (DSL 1999)',
-  publisher : 'ACM',
-  year      : '1999',
-  access    : adhoc,
-  url       : 'http://www.cs.cornell.edu/people/egs/papers/kimera-dsl99.pdf',
-  note      : [],
-  required  : ['software engineering'],
-  provided  : ['grammar-based testing'],
-  annote    : 'The paper shows how grammar-based test-data generation and an accompanying methodology of testing may be highly effective and scalable for testing language-based software, in fact, the Java Virtual Machine. Previous publications on grammar-based testing mainly focused on compiler testing. The paper relies on a domain-specific language \\emph{lava} for specifying grammars from which to generate test data -- bytecode, in this case. The generated test data is used for stress tesing the JVM verifier and also for comparative tesing of different verifiers.',
-  figure    : 'The figure, taken from the paper, carries the following caption (in the paper): The structure of the test generation process. A code-generator-generator parses a production grammar, generates a code-generator, which in turn probabilistically generates test cases based on a seed.'
-},
-
-{
-  class     : inproceedings,
-  key       : 'Cordy09',
-  authors   : ['James R. Cordy'],
-  title     : 'Excerpts from the TXL Cookbook',
-  pages     : '27-91',
-  booktitle : 'Generative and Transformational Techniques in Software Engineering III - International Summer School, GTTSE 2009, Revised Papers',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 6491,
-  year      : 2011,
-  access    : adhoc,
-  url       : 'http://cs.queensu.ca/~cordy/Papers/JC_TXLCookbook_LNCS.pdf',
-  note      : [],
-  required  : ['software engineering'],
-  provided  : ['source-code analysis', 'source-code transformation'],
-  annote    : 'The paper captures some reusable knowledge of implementating software components for source-code analysis and transformation. While the paper is focused on TXL as the underlying transformation system, the overall approach to knowledge representation would also make sense for other systems. The following classes of problems are considered: parsing, restructuring, optimization, static analysis, and interpretation. The solutions to the problems are described in terms of `paradigms\' such as `Use sequences, not recursions\', `Preserve comments in output\', `Generate unique identifiers\'.',
-  figure    : 'The figure, taken from the paper, shows a simple TXL rule and its effect on a parse tree. In fact, a binary addition on constants is evaluated, thereby contributing to expression simplification.'
-},
-
-{
-  class     : inproceedings,
-  key       : 'Hainaut06',
-  authors   : ['Jean-Luc Hainaut'],
-  title     : 'The Transformational Approach to Database Engineering',
-  pages     : '95-143',
-  booktitle : 'Generative and Transformational Techniques in Software Engineering,
-               International Summer School, GTTSE 2005, Revised Papers',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 4143,
-  year      : 2006,
-  access    : closed,
-  url       : 'http://link.springer.com/chapter/10.1007%2F11877028_4',
-  note      : [],
-  required  : ['entity-relationship model', 'relational database'],
-  provided  : ['schema normalization', 'logical design', 'schema integration', 'view derivation', 'schema equivalence', 'data conversion', 'data reverse engineering', 'schema optimization', 'data access wapper generation'],
-  annote    : 'The paper describes fundamental and practical aspects of database transformation techniques. In particular, the notion of transformation is developed in combination with the correctness and reversibility properties.',
-  figure    : 'The figure, taken from the paper, shows a particular transformation rule. Quoting from the paper ``Transforming an is-a hierarchy into one-to-one relationship types and conversely. The exclusion constraint (excl:s.C,r.B) states that an A entity cannot be simultaneously linked to a B entity and a C entity. It derives from the disjoint property (D) of the subtypes\'\''
-},
-
-{
-  class     : inproceedings,
-  key       : 'RenggliGN10',
-  authors   : ['Lukas Renggli', 'Tudor Girba', 'Oscar Nierstrasz'],
-  title     : 'Embedding Languages without Breaking Tools',
-  pages     : '380-404',
-  booktitle : 'Proceedings of ECOOP 2010 - Object-Oriented Programming, 24th European Conference',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 6183,
-  year      : 2010,
-  access    : adhoc,
-  url       : 'http://scg.unibe.ch/archive/papers/Reng10aEmbeddingLanguages.pdf',
-  note      : [],
-  required  : ['Smalltalk'],
-  provided  : ['embedded language'],
-  annote    : 'The paper describes an embedding approach for the implementation of domain-specific languages (DSLs). Specifically, DSLs are modeled as language extensions of the underlying host language. The approach addresses the challenge of providing the language extensions in a manner that they integrate well with the development tools of the host language. The paper presents the extensible system \\emph{Helvetia} which intercepts the compilation pipeline of the Smalltalk host language to seamlessly integrate language extensions. See \\extraref{Tratt08} for another extensive discussion of language embedding.',
-  figure    : 'The figure, taken from the paper, shows different interception options for realizing embedded languages in the Smalltalk-based \\emph{Helvetia} framework. A pidgin does not require a new parser, but the code needs to be transformed before the semantic analysis. A creole also requires a designated parser. An argot only affects the backend.'
-},
-
-{
-  class     : inproceedings,
-  key       : 'HeidenreichJSWB10',
-  authors   : ['Florian Heidenreich', 'Jendrik Johannes', 'Mirko Seifert', 'Christian Wende', 'Marcel Bohme'],
-  title     : 'Generating Safe Template Languages',
-  pages     : '99-108',
-  booktitle : 'Proceedings of GPCE 2009 (Generative programming and component engineering)',
-  publisher : 'ACM',
-  series    : 'ACM SIGPLAN Notices',
-  volume    : 45,
-  issue     : 2,
-  year      : 2010,
-  access    : adhoc,
-  url       : 'https://www.st.cs.uni-saarland.de/~boehme/paper/GPCE09.pdf',
-  note      : [],
-  required  : ['metamodeling'],
-  provided  : ['template instantiation'],
-  annote    : 'The paper addresses the problem of unsafe template instantiation. Such instantiation can be unsafe in the sense that string-level operations are performed at run-time and thus it is not obvious or known at design time whether the described instantiation will actually lead to syntactically correct output eventually. The proposed approach involves the addition of generic template-instantiation concepts to existing language definitions in a generic manner. Thus, template instantiation would only be described in terms of metamodel instantiation, thereby implying syntactically correctness. Similar problems are present in programming languages with a macro system.',
-  figure    : 'The figure, taken from the paper, shows the metamodel for template-instantiation concepts, e.g., a conditional and a loop form. The idea is that these concepts can be specialized for the syntactic categories of the language that is to be extended with template concepts. Whether or not a conditional or a loop is allowed in a certain position also depends on the cardinalities of the model element in the position. There is a generic algorithm to weave the template support in a given metamodel for a language.'
-},
-
-{
-  class     : inproceedings,
-  key       : 'Wachsmuth09',
-  authors   : ['Guido Wachsmuth'],
-  title     : 'A Formal Way from Text to Code Templates',
-  pages     : '109-123',
-  booktitle : 'Proceedings of FASE 2009 (Fundamental Approaches to Software Engineering)',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 5503,
-  year      : 2009,
-  access    : closed,
-  url       : 'http://link.springer.com/chapter/10.1007%2F978-3-642-00593-0_8',
-  note      : [],
-  required  : ['metamodeling', 'formal semantics'],
-  provided  : ['template instantiation'],
-  annote    : 'The paper addresses the problem of unsafe template instantiation; see \\citeref{HeidenreichJSWB10} for a description of the problem. Both papers share the overall line of attack: adaptation of a language's metamodel (syntax) so that template-instantiation concepts are made available in a systematic way. The present paper stands out by deploying techniques of programming language theory (operational semantics and type systems) as well as grammar adaptation based on appropriate transformation operators in the tradition of \\extraref{Laemmel01}.',
-  figure    : 'The figure, taken from the paper, shows a transformation script which loops over symbols of the underlying language grammar and includes additional productions in a systematic manner so that concepts for template instantiation are made available.'
-},
-
-{ 
-  class     : article,
-  key       : 'Reynolds98',
-  authors   : ['John C. Reynolds'],
-  title     : 'Definitional Interpreters for Higher-Order Programming Languages',
-  journal   : 'Higher-Order and Symbolic Computation',
-  volume    : 11,
-  number    : 4,
-  year      : 1998,
-  pages     : '363-397',
-  access    : open,
-  url       : 'http://cs.au.dk/~hosc/local/HOSC-11-4-pp363-397.pdf',
-  note      : ['This paper originally appeared as~\\extraref{Reynolds72}.'],
-  required  : ['semantics'],
-  provided  : ['interpreter', 'continuation'],
-  annote    : 'The paper discusses the use of interpreters as definitions of languages. There are the notions of defining and defined language (similar to what is also called elsewhere meta and object language). The paper analyzes possible differences between the interpreter-based definition and the formal or informal definition. The paper also discusses different styles of interpreter definition, e.g., a less insightful meta-circular interpreter for a higher-order language versus a first-order interpreter for the same defined language. The issue of application-order dependence is analysed and addressed with continuations.',
-  figure    : 'The figure, taken from the paper, shows a meta-circular interpreter for (in) a simple functional language with lambdas, constants, conditionals, and recursive let.'
-},
-
-{
-  class     : inproceedings,
-  key       : 'ErwigW11',
-  authors   : ['Martin Erwig', 'Eric Walkingshaw'],
-  title     : 'Semantics First! - Rethinking the Language Design Process',
-  pages     : '243-262',
-  booktitle : 'Software Language Engineering - 4th International Conference, SLE 2011, Revised Selected Papers',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : 6940,
-  year      : 2012,
-  access    : adhoc,
-  url       : 'http://web.engr.oregonstate.edu/~erwig/papers/SemanticsFirst_SLE11.pdf',
-  note      : [],
-  required  : ['functional programming'],
-  provided  : ['language design'],
-  annote    : 'The paper suggests a semantics-centric approach to language design as opposed to a more syntax-based one. Haskell is used as a metalanguage. General language operators are employed to adapt and grow sophisticated languages out of simple semantics concepts.',
-  figure    : 'The figure is taken from a book chapter~\\extraref{ErwigW12} that was derived from the conference paper at hand. The semantics-driven DSL design process is summarized. The idea is that one performs domain decomposition on the semantic side; one associates small languages with domains through domain modeling, and one also performs syntactic design to build a full language from the small languages.'
-},
-
-{
-  class     : inproceedings,
   key       : 'Koskimies91',
-  authors   : ['Kai Koskimies'],
   title     : 'Object-Orientation in Attribute Grammars',
-  pages     : '297-329',
-  booktitle : 'Attribute Grammars, Applications and Systems, International Summer School SAGA, Proceedings',
-  publisher : 'Springer',
-  series    : 'LNCS',
-  volume    : '545',
-  year      : 1991,
   access    : closed,
   url       : 'http://link.springer.com/chapter/10.1007%2F3-540-54572-7_11',
   note      : [],
@@ -220,15 +12,23 @@
   figure    : 'The figure shows two grammars for the same expression language taken from the paper. The first grammar is a conventional context-free grammar in terms of style, whereas the second grammar is restructured to be in an explicitly OO-enabled form. That is, an object model with single inheritance could be derived from the second grammar directly.'
 },
 
+{
+  key       : 'Hughes95',
+  title     : 'The Design of a Pretty-printing Library',
+  access    : closed,
+  url       : 'http://link.springer.com/chapter/10.1007%2F3-540-59451-5_3',
+  note      : [],
+  required  : ['functional programming'],
+  provided  : ['pretty printing', 'combinator library'],
+  annote    : 'Pretty printing is clearly an important form of language processing. This is not the first paper on a declarative and compositional approach to pretty printing; it stands out though with a very accessible presentation explaining the design and implementation of a (Haskell-based) combinator library for pretty printing. This library can be viewed as providing a simple \\emph{embedded language} for pretty printing.',
+  figure    : 'The figure shows snippets (two Haskell terms and one Haskell function) taken from the paper. The figure illustrates pretty printing for binary trees with a string as info at each fork (i.e., non-leaf) node. The pretty-printed term uses line breaks and indentation for prettiness. The pretty printing function maps trees to documents; see the reference to the \\emph{Doc} type. Pretty printer combinators are used; see `sep\' for example.'
+},
+
 /*
 
 {
-  class     : phdthesis,
   key       : 'Espinosa95',
-  authors   : ['{David A.} Espinosa'], 
   title     : 'Semantic Lego',
-  school    : 'Columbia University',
-  year      : 1995,
   access    : adhoc,
   url       : 'http://groups.csail.mit.edu/mac/users/dae/papers/thesis.ps.Z',
   note      : [],
@@ -240,15 +40,83 @@
 
 */
 
+{ 
+  key       : 'Reynolds98',
+  title     : 'Definitional Interpreters for Higher-Order Programming Languages',
+  access    : open,
+  url       : 'http://cs.au.dk/~hosc/local/HOSC-11-4-pp363-397.pdf',
+  note      : ['This paper originally appeared as~\\cite{Reynolds72}.'],
+  required  : ['semantics'],
+  provided  : ['interpreter', 'continuation'],
+  annote    : 'The paper discusses the use of interpreters as definitions of languages. There are the notions of defining and defined language (similar to what is also called elsewhere meta and object language). The paper analyzes possible differences between the interpreter-based definition and the formal or informal definition. The paper also discusses different styles of interpreter definition, e.g., a less insightful meta-circular interpreter for a higher-order language versus a first-order interpreter for the same defined language. The issue of application-order dependence is analysed and addressed with continuations.',
+  figure    : 'The figure, taken from the paper, shows a meta-circular interpreter for (in) a simple functional language with lambdas, constants, conditionals, and recursive let.'
+},
+
 {
-  class     : inproceedings,
-  key       : 'HappelS06',
-  authors   : ['Hans-J{\\"o}rg Happel', 'Stefan Seedorf'],
-  title     : 'Applications of Ontologies in Software Engineering',  
-  booktitle : 'Proceedings of International Workshop on Semantic Web Enabled Software Engineering (SWESE 2006)',
-  year      : 2006,
+  key       : 'SirerB99',
+  title     : 'Using production grammars in software testing',
   access    : adhoc,
-  url       : 'http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.89.5733&rep=rep1&type=pdf',
+  url       : 'http://www.cs.cornell.edu/people/egs/papers/kimera-dsl99.pdf',
+  note      : [],
+  required  : ['software engineering'],
+  provided  : ['grammar-based testing'],
+  annote    : 'The paper shows how grammar-based test-data generation and an accompanying methodology of testing may be highly effective and scalable for testing language-based software, in fact, the Java Virtual Machine. Previous publications on grammar-based testing mainly focused on compiler testing. The paper relies on a domain-specific language \\emph{lava} for specifying grammars from which to generate test data -- bytecode, in this case. The generated test data is used for stress tesing the JVM verifier and also for comparative tesing of different verifiers.',
+  figure    : 'The figure, taken from the paper, carries the following caption (in the paper): The structure of the test generation process. A code-generator-generator parses a production grammar, generates a code-generator, which in turn probabilistically generates test cases based on a seed.'
+},
+
+{ 
+  key       : 'Sheard01',
+  title     : 'Accomplishments and Research Challenges in Meta-programming',
+  access    : adhoc,
+  url       : 'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.21.6848',
+  note      : [],
+  required  : ['functional programming', 'metaprogramming'],
+  provided  : ['taxonomy of metaprogramming', 'program representation', 'quasi-quotation', 'intensional analysis', 'staged computation', 'MetaML'],
+  annote    : 'The paper provides a (possibly outdated) overview over meta-programming with focus on the functional approach towards program representation, code generation, and intensional code analysis. The paper aims to provide a taxonomy of metaprogramming and it discusses problems in metaprogramming in a systematic and illustrative manner. MetaML is shortly introduced as a particular metaprogramming language. The paper brings up research challenges related to, e.g., dependent typing.',
+  figure    : 'The figure, taken from the paper, shows the MetaML-based definition of a staged exponentiation function. The \\texttt{power\\_gen} function describes the code generation for the n-th power. The \\texttt{power\\_code} value holds the code for the 3rd power. The \\texttt{power\\_fun} function is the function for said code, which we can ultimately apply.'
+},
+
+{
+  key       : 'KurtevBA02',
+  title     : 'Technological spaces: An initial appraisal',
+  access    : adhoc,
+  url       : 'http://eprints.eemcs.utwente.nl/10206/01/0363TechnologicalSpaces.pdf',
+  note      : [],
+  required  : ['model driven engineering'],
+  provided  : ['technological space'],
+  annote    : 'As suggested by the title, this is the record of the introduction of the technological space notion. Several spaces are identified and discussed: abstract/concrete syntaxes, database management systems, XML, ontology engineering, and MDA. The megamodel underlying the spaces is discussed and instantiated for some spaces. The need for and the role of bridges between the spaces is explained. See \\cite{Bezivin06} for another, more recent description of technological spaces.',
+  figure    : 'The figure, taken from the paper, shows five technological spaces and bridges between them.'
+},
+
+{ 
+  key       : 'Thomas03',
+  title     : 'The Impedance Imperative, Tuples + Objects + Infosets = Too Much Stuff!',
+  access    : open,
+  url       : 'http://www.jot.fm/issues/issue_2003_09/column1.pdf',
+  note      : [],
+  required  : ['data programming'],
+  provided  : ['impedance mismatch'],
+  annote    : 'The paper (a column, in fact) takes a critical look at data programming---specifically in the sense of CRUD (Create, Read, Update, Delete). The discussion covers indexed files, SQL and database access APIs, object-oriented databases, modern wrapping/mapping-based approaches (e.g., object/relational mapping). The column identifies various problems with data programming: diversity of data modeling and CRUD programming options and the practical need to mix them, difficulties of integrating different type systems and data query/transformation languages, proprietary developments, performance issues, and complexity of support technologies. The discussion also briefly touches some contenders that may address some of the problems. The paper may be a good starting point to look for technical publications on the topic.',
+  figure    : 'The figure, taken from Wikipedia, obviously shows the Bermuda triangle. While working with Erik Meijer on \\cite{LaemmelM06a,LaemmelM06b}, I picked up his intuition that data programming (because of the impedance mismatch) is essentially like operating in the Bermuda triangle. That is, data may disappear, if we allow this exaggeration. Just replace Bermuda, Florida, and Puerto Rico by XML, relational databases, and objects. (The idea of a triangle is an understatement because there are, of course, more competitors, e.g., Cobol and ontologies.)'
+},
+
+{
+  key       : 'Hainaut06',
+  title     : 'The Transformational Approach to Database Engineering',
+  access    : closed,
+  url       : 'http://link.springer.com/chapter/10.1007%2F11877028_4',
+  note      : [],
+  required  : ['entity-relationship model', 'relational database'],
+  provided  : ['schema normalization', 'logical design', 'schema integration', 'view derivation', 'schema equivalence', 'data conversion', 'data reverse engineering', 'schema optimization', 'data access wapper generation'],
+  annote    : 'The paper describes fundamental and practical aspects of database transformation techniques. In particular, the notion of transformation is developed in combination with the correctness and reversibility properties.',
+  figure    : 'The figure, taken from the paper, shows a particular transformation rule. Quoting from the paper ``Transforming an is-a hierarchy into one-to-one relationship types and conversely. The exclusion constraint (excl:s.C,r.B) states that an A entity cannot be simultaneously linked to a B entity and a C entity. It derives from the disjoint property (D) of the subtypes\'\''
+},
+
+{
+  key       : 'HappelS06',
+  title     : 'Applications of Ontologies in Software Engineering',  
+  access    : adhoc,
+  url       : 'https://km.aifb.kit.edu/ws/swese2006/final/happel_full.pdf',
   note      : [],
   required  : ['software engineering', 'ontology'],
   provided  : ['analysis', 'design', 'requirements engineering', 'component reuse', 'implementation', 'modeling', 'documentation', 'semantic middleware', 'semantic web service', 'maintenance', 'testing'],
@@ -257,70 +125,152 @@
 },
 
 {
-  class     : 'inproceedings',
-  key       : 'KurtevBZ02',
-  authors   : ['Ivan Kurtev', 'Jean Bezivin', 'Mehmet Aksit'],
-  title     : 'Technological spaces: An initial appraisal',
-  booktitle : 'CoopIS, DOA 2002 Federated Conferences, Industrial track, Proceedings',
-  year      : 2002,
-  access    : adhoc,
-  url       : 'http://eprints.eemcs.utwente.nl/10206/01/0363TechnologicalSpaces.pdf',
-  note      : [],
-  required  : ['model driven engineering'],
-  provided  : ['technological space'],
-  annote    : 'As suggested by the title, this is the record of the introduction of the technological space notion. Several spaces are identified and discussed: abstract/concrete syntaxes, database management systems, XML, ontology engineering, and MDA. The megamodel underlying the spaces is discussed and instantiated for some spaces. The need for and the role of bridges between the spaces is explained. See \\extraref{Bezivin06} for another, more recent description of technological spaces.',
-  figure    : 'The figure, taken from the paper, shows five technological spaces and bridges between them.'
-},
-
-{
-  class     : inproceedings,
   key       : 'Bezivin06',
-  authors   : ['Jean B{\\\'e}zivin'],
   title     : 'Model Driven Engineering: An Emerging Technical Space',
-  pages     : '36-64',
-  booktitle : 'Generative and Transformational Techniques in Software Engineering, International Summer School, GTTSE 2005, Revised Papers',
-  publisher : {Springer},
-  series    : {LNCS},
-  volume    : {4143},
-  year      : 2006,
   access    : closed,
   url       : 'http://link.springer.com/chapter/10.1007%2F11877028_2',
   note      : [],
   required  : ['software development'],
   provided  : ['technological space', 'model driven engineering', 'model transformation', 'metamodeling'],
-  annote    : 'The paper describes the basic principles and practical characteristics of model driven engineering (MDE). The technological space notion (see also \\citeref{KurtevBZ02}) is used to organize much of the description. In particular, MDE is also compared to other technological spaces. The key notions of metamodeling and model transformation are illustrated. Various technologies and standards are placed in context, e.g., EMF and ATL.',
+  annote    : 'The paper describes the basic principles and practical characteristics of model driven engineering (MDE). The technological space notion (see also \\cite{KurtevBA02}) is used to organize much of the description. In particular, MDE is also compared to other technological spaces. The key notions of metamodeling and model transformation are illustrated. Various technologies and standards are placed in context, e.g., EMF and ATL.',
   figure    : 'The figure, taken from the conclusion of the paper, on the left, highlights two important relations involved in MDE---the `isRepresentedBy\' relation that some thing (perhaps a model) is represented by a model and the `conformsTo\' relation related to metamodeling. On the right, the progression from real-world entities, through models and metamodels, up to metametamodels is megamodeled.'
 },
 
-{ 
-  class     : article,
-  key       : 'Thomas03impedance',
-  authors   : ['Dave Thomas'],
-  title     : 'The Impedance Imperative, Tuples + Objects + Infosets = Too Much Stuff!',
-  journal   : 'Journal of Object Technology',
-  volume    : 2,
-  number    : 8,
-  year      : 2003,
-  pages     : '7-12',
-  access    : open,
-  url       : 'http://www.jot.fm/issues/issue_2003_09/column1.pdf',
+{
+  key       : 'BezivinBFGJKKP06',
+  title     : 'A Canonical Scheme for Model Composition',
+  access    : adhoc,
+  url       : 'http://ssei.pbworks.com/f/Bezivin.A+Canonical+Scheme+for+Model+Composition.pdf',
   note      : [],
-  required  : ['data programming'],
-  provided  : ['impedance mismatch'],
-  annote    : 'The paper (a column, in fact) takes a critical look at data programming---specifically in the sense of CRUD (Create, Read, Update, Delete). The discussion covers indexed files, SQL and database access APIs, object-oriented databases, modern wrapping/mapping-based approaches (e.g., object/relational mapping). The column identifies various problems with data programming: diversity of data modeling and CRUD programming options and the practical need to mix them, difficulties of integrating different type systems and data query/transformation languages, proprietary developments, performance issues, and complexity of support technologies. The discussion also briefly touches some contenders that may address some of the problems. The paper may be a good starting point to look for technical publications on the topic.',
-  figure    : 'The figure, taken from Wikipedia, obviously shows the Bermuda triangle. While working with Erik Meijer on \\extraref{LaemmelM06a,LaemmelM06b}, I picked up his intuition that data programming (because of the impedance mismatch) is essentially like operating in the Bermuda triangle. That is, data may disappear, if we allow this exaggeration. Just replace Bermuda, Florida, and Puerto Rico by XML, relational databases, and objects. (The idea of a triangle is an understatement because there are, of course, more competitors, e.g., Cobol and ontologies.)'
+  required  : ['metamodeling'],
+  provided  : ['model composition', 'model weaving', 'Glue Generator Tool', 'Epsilon Merging Language', 'Atlas Model Weaver'],
+  annote    : 'The paper surveys different methods and tools for model composition. It also analyzes composition scenarios and assesses them, for example, in terms of degree of feasible automation. Further, general requirements for model composition tools are postulated and the degree of tool support is considered for existing technologies (at the time of writing).',
+  figure    : 'The figure, taken from the paper\' section on the Atlas Model Weaver, shows the schema (say, megamodel) of models and metamodels involved in a weaving (i.e., composition) situation together with the required conformance relationships.'
+},
+
+{
+  key       : 'BravenboerTV06',
+  title     : 'Declarative, formal, and extensible syntax definition for AspectJ',
+  access    : adhoc,
+  url       : 'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.96.7867',
+  note      : [],
+  required  : ['parsing', 'AspectJ'],
+  provided  : ['scannerless parsing', 'Generalized LR parsing'],
+  annote    : 'The paper is a showcase of using generalized LR parsing in the implementation of frontends. While the underlying theory has been published elsewhere, the paper is nevertheless suitable for studying the basics of the method. AspectJ is picked as the target of a case study because parsing AspectJ challenges more convential parsing techniques. We mention, in passing, another recent paper on generalized LR parsing~\\cite{EconomopoulosKV09}.',
+  figure    : 'In the figure, taken from the paper, the non-trivial issue of state maintenance in a scanner-based frontend for AspectJ is described at a higher level of abstraction. Depending on the context of parsing (Java, AspectJ, Pointcut), the scanner needs to work differently. In scannerless implementation, such extra effort is not needed.'
 },
 
 { 
-  class     : article,
+  key       : 'AlvesV09',
+  title     : 'A Case Study in Grammar Engineering',
+  access    : adhoc,
+  url       : 'http://wiki.di.uminho.pt/twiki/pub/Personal/Tiago/Publications/grammar-eng.pdf',
+  note      : [],
+  required  : ['software engineering', 'parsing', 'metrics'],
+  provided  : ['grammar engineering', 'grammar recovery', 'grammar metrics', 'grammar testing', 'grammar versioning'],
+  annote    : 'The `Grammarware Agenda\' \\cite{KlintLV05} properly established the terms grammar engineering (and grammarware engineering). The present paper presents a study that involves several areas of grammarware engineering. The study is concerned with the development of a VDM-SL grammar for actual parsing from its ISO standard language reference. The study involves grammar transformation (recovery), testing, metrics, and version management.',
+  figure    : 'The figure, taken from the paper, shows the development of different grammar metrics over time. The timeline is defined by the commits of the grammar, as it was changed over time to complete the recovery process and to otherwise develop the parser. Test coverage also drives this process.'
+},
+
+{
+  key       : 'Wachsmuth09',
+  title     : 'A Formal Way from Text to Code Templates',
+  access    : closed,
+  url       : 'http://link.springer.com/chapter/10.1007%2F978-3-642-00593-0_8',
+  note      : [],
+  required  : ['metamodeling', 'formal semantics'],
+  provided  : ['template instantiation'],
+  annote    : 'The paper addresses the problem of unsafe template instantiation; see \\cite{HeidenreichJSWB09} for a description of the problem. Both papers share the overall line of attack: adaptation of a language\'s metamodel (syntax) so that template-instantiation concepts are made available in a systematic way. The present paper stands out by deploying techniques of programming language theory (operational semantics and type systems) as well as grammar adaptation based on appropriate transformation operators in the tradition of \\cite{Laemmel01}.',
+  figure    : 'The figure, taken from the paper, shows a transformation script which loops over symbols of the underlying language grammar and includes additional productions in a systematic manner so that concepts for template instantiation are made available.'
+},
+
+{
+  key       : 'Moody09',
+  title     : 'The "Physics" of Notations: Toward a Scientific Basis for Constructing Visual Notations in Software Engineering',
+  access    : adhoc,
+  url       : 'http://www.dama.org.au/wp-content/uploads/2013/02/IEEE-TSE-35-5-November-December-2009-The-Physics-of-Notations-D.L.Moody_.pdf',
+  note      : [],
+  required  : ['visual language'],
+  provided  : [''],
+  annote    : '',
+  figure    : 'In the figure, taken from the paper and based on seminal work~\\cite{Bertin83}, different visual variables are listed. These variables can thought of as defining a set of primitives, we quote from the paper: ``a visual alphabet--for constructing visual notations: graphical symbols can be constructed by specifying particular values for visual variables (e.g., shape = rectangle, colour = green). Notation designers can create an unlimited number of graphical symbols by combining the variables together in different ways.\'\''
+},
+
+{
+  key       : 'RenggliGN10',
+  title     : 'Embedding Languages without Breaking Tools',
+  access    : adhoc,
+  url       : 'http://scg.unibe.ch/archive/papers/Reng10aEmbeddingLanguages.pdf',
+  note      : [],
+  required  : ['Smalltalk'],
+  provided  : ['embedded language'],
+  annote    : 'The paper describes an embedding approach for the implementation of domain-specific languages (DSLs). Specifically, DSLs are modeled as language extensions of the underlying host language. The approach addresses the challenge of providing the language extensions in a manner that they integrate well with the development tools of the host language. The paper presents the extensible system \\emph{Helvetia} which intercepts the compilation pipeline of the Smalltalk host language to seamlessly integrate language extensions. See \\cite{Tratt08} for another extensive discussion of language embedding.',
+  figure    : 'The figure, taken from the paper, shows different interception options for realizing embedded languages in the Smalltalk-based \\emph{Helvetia} framework. A pidgin does not require a new parser, but the code needs to be transformed before the semantic analysis. A creole also requires a designated parser. An argot only affects the backend.'
+},
+
+{
+  key       : 'HeidenreichJSWB09',
+  title     : 'Generating Safe Template Languages',
+  access    : adhoc,
+  url       : 'https://www.st.cs.uni-saarland.de/~boehme/paper/GPCE09.pdf',
+  note      : [],
+  required  : ['metamodeling'],
+  provided  : ['template instantiation'],
+  annote    : 'The paper addresses the problem of unsafe template instantiation. Such instantiation can be unsafe in the sense that string-level operations are performed at run-time and thus it is not obvious or known at design time whether the described instantiation will actually lead to syntactically correct output eventually. The proposed approach involves the addition of generic template-instantiation concepts to existing language definitions in a generic manner. Thus, template instantiation would only be described in terms of metamodel instantiation, thereby implying syntactically correctness. Similar problems are present in programming languages with a macro system.',
+  figure    : 'The figure, taken from the paper, shows the metamodel for template-instantiation concepts, e.g., a conditional and a loop form. The idea is that these concepts can be specialized for the syntactic categories of the language that is to be extended with template concepts. Whether or not a conditional or a loop is allowed in a certain position also depends on the cardinalities of the model element in the position. There is a generic algorithm to weave the template support in a given metamodel for a language.'
+},
+
+{
+  key       : 'Cordy11',
+  title     : 'Excerpts from the TXL Cookbook',
+  access    : adhoc,
+  url       : 'http://cs.queensu.ca/~cordy/Papers/JC_TXLCookbook_LNCS.pdf',
+  note      : [],
+  required  : ['software engineering'],
+  provided  : ['source-code analysis', 'source-code transformation'],
+  annote    : 'The paper captures some reusable knowledge of implementating software components for source-code analysis and transformation. While the paper is focused on TXL as the underlying transformation system, the overall approach to knowledge representation would also make sense for other systems. The following classes of problems are considered: parsing, restructuring, optimization, static analysis, and interpretation. The solutions to the problems are described in terms of `paradigms\' such as `Use sequences, not recursions\', `Preserve comments in output\', `Generate unique identifiers\'.',
+  figure    : 'The figure, taken from the paper, shows a simple TXL rule and its effect on a parse tree. In fact, a binary addition on constants is evaluated, thereby contributing to expression simplification.'
+},
+
+{
+  key       : 'ErwigW12a',
+  title     : 'Semantics First! - Rethinking the Language Design Process',
+  access    : adhoc,
+  url       : 'http://web.engr.oregonstate.edu/~erwig/papers/SemanticsFirst_SLE11.pdf',
+  note      : [],
+  required  : ['functional programming'],
+  provided  : ['language design'],
+  annote    : 'The paper suggests a semantics-centric approach to language design as opposed to a more syntax-based one. Haskell is used as a metalanguage. General language operators are employed to adapt and grow sophisticated languages out of simple semantics concepts.',
+  figure    : 'The figure is taken from a book chapter~\\cite{ErwigW12b} that was derived from the conference paper at hand. The semantics-driven DSL design process is summarized. The idea is that one performs domain decomposition on the semantic side; one associates small languages with domains through domain modeling, and one also performs syntactic design to build a full language from the small languages.'
+},
+
+{
+  key       : 'CookL11',
+  title     : 'Tutorial on Online Partial Evaluation',
+  access    : adhoc,
+  url       : 'http://arxiv.org/abs/1109.0781v1',
+  note      : [],
+  required  : ['functional programming'],
+  provided  : ['partial evaluation'],
+  annote    : 'We quote from the abstract of the paper: ``This paper is a short tutorial introduction to online partial evaluation. We show how to write a simple online partial evaluator for a simple, pure, first-order, functional programming language. In particular, we show that the partial evaluator can be derived as a variation on a compositionally defined interpreter. We demonstrate the use of the resulting partial evaluator for program optimization in the context of model-driven development.\'\'',
+  figure    : 'The figure, taken from the paper, shows a general, sufficiently interpreter function for the simulation of state machines. When provided with the actual description of the state machine, partial evaluation can speziale the function to specific (efficient) dispatch code that essentially represents the state machine as code.'
+},
+
+{
+  key       : 'HerrmannsdoerferVW11',
+  title     : 'An Extensive Catalog of Operators for the Coupled Evolution of Metamodels and Models',
+  access    : adhoc,
+  url       : 'https://www4.in.tum.de/~herrmama/publications/SLE2010_herrmannsdoerfer_catalog_coupled_operators.pdf',
+  note      : [],
+  required  : ['metamodeling'],
+  provided  : ['co-evolution'],
+  annote    : 'The evolution of a language implies that its metamodel has to evolve. Further, in most cases, existing instances may also need to co-evolve. Operation-nased transformation has matured as an automated method of carrying out metamodel/model coevolution. The present paper collects a catalogue of operations on the grounds of a literature survey and case studies; it also organizes the operations along several dimensions.',
+  figure    : 'The figure, taken from an earlier paper~\\cite{Wachsmuth07} by one of the authors of the paper at hand, lists some adaptation operators and classifies them in terms of their purpose (refactoring, construction, descruction) and their semantics preservation properties. The paper at hand compiles a much more extensive catalogue and engages in a richer classification.'
+},
+
+{ 
   key       : 'MullerFBC12',
-  authors   : ['Pierre-Alain Muller', 'Fr{\\\'e}d{\\\'e}ric Fondement', 'Benoit Baudry', 'Beno\\^{\\i}t Combemale'],
   title     : 'Modeling modeling modeling',
-  journal   : 'Software and System Modeling',
-  volume    : 11,
-  number    : 3,
-  year      : 2012,
-  pages     : '347-359',
   access    : adhoc,
   url       : 'http://people.rennes.inria.fr/Benoit.Baudry/wp-publications/muller2010/',
   note      : [],
@@ -328,6 +278,30 @@
   provided  : ['representation', 'theory of modeling'],
   annote    : 'The paper works towards a theory of modeling. There is a focus on the representation relation that is so central to modeling (in the sense that one thing \\emph{represents} another thing). In fact, different (canonical) kinds of representation relations are identified and organized in a corresponding metamodel. This foundational work is well positioned in the context of previous work on the foundations of modeling (and metamodeling).',
   figure    : 'The figure, taken from the paper, shows variations on the $\\mu$ relation. These variations are essentially based on differences with regard to the \\emph{intention} of things. Quoting from the paper: ``The intention of a thing thus represents the reason why someone would be using that thing, in which context, and what are the expectations vs.\\ that thing. It should be seen as a mixture of requirements, behavior, properties, and constraints, either satisfied or maintained by the thing.\'\'' 
+},
+
+{ 
+  key       : 'JezequelCDGR12',
+  title     : 'Bridging the chasm between MDE and the world of compilation',
+  access    : closed,
+  url       : 'http://link.springer.com/article/10.1007%2Fs10270-012-0266-8',
+  note      : [],
+  required  : ['modelware', 'grammarware', 'compilation', 'MDE'],
+  provided  : ['cross-fertilization'],
+  annote    : 'The paper attempts a deeper comparison of the technological spaces~\\cite{KurtevBA02} of modelware (MDE) and grammarware (specifically compiler construction). We quote: ``To address the growing complexity of soft- ware systems, Model-Driven Engineering (MDE) leverages Domain Specific Languages (DSL) to define abstract models of systems and automated methods to process them. Mean- while, compiler technology mostly concentrates on advanced techniques and tools for program transformation. For this, it has developed complex analyses and transformations (from lexical and syntaxic to semantic analyses, down to platform- specific optimizations). These two communities appear today quite complementary and are starting to meet again in the Software Language Engineering (SLE) field.\'\'',
+  figure    : 'The figure, taken from the paper, shows how the two spaces may mutally benefit from each other: shortcomings of one space may be addressed by adopting solutions known in the other space.' 
+},
+
+{
+  key       : 'VolterSBK14',
+  title     : 'Towards User-Friendly Projectional Editors',
+  access    : adhoc,
+  url       : 'http://mbeddr.com/files/projectionalEditing-sle2014.pdf',
+  note      : [],
+  required  : ['parsing', 'IDE'],
+  provided  : ['projectional editing'],
+  annote    : 'The paper analyzes usability issues with projectional editing, but it actually may also serve a good reference for a definition and characterization of projectional editing as such. The discussion demonstrates key characteristics of projectional editing, e.g., the combination of notional styles and the use of composition techniques. We mention, in passing, to another recent paper on projectional editing~\\cite{LorenzR11}',
+  figure    : 'The figure, taken from the paper, illustrates the difference between parser-based editors (ParEs) and projectional editors (ProjEs). We quote from the paper: ``In ParEs (left), users see and modify the concrete syntax. A parser constructs the AST. In ProjEs, users see and interact with the concrete syntax, but changes directly affect the AST. The concrete syntax is projected from the changing AST.\'\''
 }
 
 ].

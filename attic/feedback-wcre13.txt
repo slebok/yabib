@@ -1,6 +1,0 @@
-Slicing books
-Structured literature survey
-Core SLE concepts versus other domains ("analysis")
-Assess level of readability or similar
-Create slots for missing papers
-Organize, visualize dependencies between papers

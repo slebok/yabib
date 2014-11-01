@@ -3,19 +3,17 @@
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage{tikz}
 
-\newcommand{\citeref}[1]{[#1]}
-\newcommand{\extraref}[1]{\cite{#1}}
-\newcommand{\mainsection}[1]{%
+\newcommand{\papersection}[1]{%
 \newpage
-\section{Paper \emph{#1}}
+\subsection{\emph{#1}}
 
-\subsection*{Paper \emph{#1} -- Data}
+\subsubsection*{\emph{#1} -- Data}
 }
 \newcommand{\illusection}[2]{%
 
 \newpage
 
-\subsection*{Paper \emph{#1} -- Illustration}
+\subsubsection*{\emph{#1} -- Illustration}
 
 \includegraphics[width=\textwidth]{figures/#1}
 
@@ -29,7 +27,7 @@
 
 \author{Ralf L\"ammel}
 
-\date{Version 0.002 (28 October 2014)}
+\date{Version 0.002 (1 November 2014)}
 
 \begin{document}
 
@@ -42,28 +40,33 @@
 
   Software Language Engineering (SLE) is a particular view on Software
   Engineering (SE), which pays specific attention to the many software
-  languages that are used in software development.  These are not just
+  languages that are used in software development. These are not just
   programming languages, but also modeling languages, query and
-  transformation languages, schema languages, and domain-specific
-  languages. Thus, SLE is concerned with design, implementation,
-  testing, deployment, and evolution of software languages as well as
-  language-based software components.
+  transformation languages, schema languages---many of them to be
+  considered domain-specific languages. SLE is concerned with design,
+  implementation, testing, deployment, and evolution of software
+  languages as well as language-based software components.
 
   \medskip
 
-  The purpose of this richly annotated bibliography is to contribute
-  to the SLE body of knowledge (SLEBOK). At this stage, the
-  bibliography is not claimed be based on a systematic / structured
-  methodology. Instead, the intention it so collect a manageable set
-  of papers that cover many principles and practilities of SLE in an
-  accessible manner. To this end, the SLE and GTTSE venues were
-  considered, but many other papers were considered on the author's
-  long-term exposition to SLE school of thought. 
+  The purpose of this annotated bibliography is to contribute to the
+  SLE body of knowledge (SLEBOK). The bibliography collects a
+  manageable set of papers that cover many principles and practilities
+  of SLE in an accessible manner. The intension is to favor more
+  fundamental, general papers over specific, highly technical papers.
+  The selection is otherwise not very systematic. The SLE and GTTSE
+  venues were assumed to provide key papers. Yet other venues, such as
+  OOPSLA (SPLASH), ECOOP, and CC as well as special issues on the SLE
+  topic or its vicinity were also considered. Several papers were
+  simply included based on the author's long-term exposition to SLE
+  school of thought. Moreover, several SLE researchers have provided
+  advice on what additional papers to include.
 
   \medskip 
+
   The bibliography could be useful in teaching. In fact, the selection
-  papes is largely based on what I have covered or will cover in a
-  relatively advanced SLE course.
+  of papers is largely based on what I have covered or wish or could
+  imagine to cover in a relatively advanced SLE course.
 
 \end{abstract}
 
@@ -83,22 +86,10 @@ This is unfinished work.
 
 \section{Acknowledgment}
 
-The following people have provided me with insights and suggestions:
-
-\begin{itemize}
-\item Anya Helene Skrove Bagge
-\item Andrei Varanovich
-\item Andreas Winter
-\item Vadim Zaytsev
-\end{itemize}
-
-\noindent
-I look forward more collaboration. In fact, I hope to turn this effort
-into a proper collaborative effort. For the time being, I am supposed
-to look into some of the suggestions received---some of them being
-more obvious, given the state (version number) of this effort. They
-are mostly concerned with the methodology for collecting and
-semantically enriching papers.
+The following people have made suggestions for inclusion into the
+bibliography or given more general advice on the project: Anya Helene
+Bagge, David Lorenz, Richard Paige, Andrei Varanovich, Guido
+Wachsmuth, Andreas Winter, Vadim Zaytsev.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -112,35 +103,42 @@ per entry with data as follows:
 
 \begin{description}
 
-\item[Class] article, inproceedings---in the sense of bibtex.
+\item[Key] Descriptor of the paper.
 
-\item[Title] obvious
+\item[Title] Title of the paper.
 
-\item[Author(s)] obvious
+\item[Citation] Bibtex citation for the paper.
 
-\item[Year published] obvious
+\item[Online URL] Public access where possible.
 
-\item[Online URL] Public access where possible
+\item[Required concepts] Assumed background.
 
-\item[Required concepts] Assumed background
+\item[Provided concepts] Knowledge areas served.
 
-\item[Provided concepts] Knowledge areas served
+\item[Annotation] Description of the paper.
 
-\item[Annotation] Obvious
+\item[Figure] An illustration.
 
 \end{description}
 
-Additional metadata is contained in the underlying model. There is a
-second page per entry serving for illustration. The page is dedicated
-to a figure taken from the paper or somewhere else, with a caption
-addeed. The entries may refer to works which are not in the core
-selection. These entries are collected in a plain bibliography.
+The illustration consists of an annotated figure, which is taken
+either directly from the paper or assembled. Annotations of papers and
+their illustrations may also refer to works which are not part of the
+selection.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+
+\section{Papers of the bibliography}
+
 \input{bib}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
 \bibliographystyle{plain}
-\bibliography{extra}
+\bibliography{bib,extra}
 
 \end{document}

@@ -8,6 +8,9 @@
 % Actual generator code
 :- ['generate-tex.pro'].
 
+% Initialize housekeeping for testing
+:- initTesting.
+
 % Run TeX generator
 :- genTeX.
 
