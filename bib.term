@@ -192,7 +192,7 @@
   note      : [],
   required  : ['visual language'],
   provided  : [''],
-  annote    : '',
+  annote    : 'We quote from the paper: ``This paper defines a set of principles for designing cognitively effective visual notations: ones that are optimised for human understanding and problem solving. Together these form a design theory, called the Physics of Notations as it focuses on the physical (perceptual) properties of notations rather than their logical (semantic) properties. The principles were synthesised from theory and empirical evidence from a wide range of fields and rest on an explicit theory of how visual notations communicate. They can be used to evaluate, compare, and improve existing visual notations as well as to construct new ones. The paper identifies serious design flaws in some of the leading SE notations together with practical suggestions for improving them. It also showcases some examples of visual notation design excellence from SE and other fields.\'\'',
   figure    : 'In the figure, taken from the paper and based on seminal work~\\cite{Bertin83}, different visual variables are listed. These variables can thought of as defining a set of primitives, we quote from the paper: ``a visual alphabet--for constructing visual notations: graphical symbols can be constructed by specifying particular values for visual variables (e.g., shape = rectangle, colour = green). Notation designers can create an unlimited number of graphical symbols by combining the variables together in different ways.\'\''
 },
 
